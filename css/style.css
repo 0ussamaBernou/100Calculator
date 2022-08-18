@@ -1,0 +1,115 @@
+/******************************************
+/* Variables
+/*******************************************/
+
+:root {
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* Box Model Hack */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.calculator {
+  /* position */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: max-content;
+  /* color */
+  background-color: black;
+  padding: 40px;
+  padding-top: 60px;
+  border-radius: 25px;
+}
+.screen {
+  /* position */
+  height: 80px;
+  padding: auto auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+
+  /* color */
+  background-color: white;
+  color: black;
+  text-align: right;
+
+  /* typography */
+  font-size: 4rem;
+  font-weight: 500;
+
+  /* style */
+  border-radius: 10px;
+}
+.buttons {
+  top: 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+.btn {
+  flex: 1 0 20%;
+
+  height: 60px;
+  /* width: calc(100% / 4); */
+  margin: 0 7.8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: calc(60px / 2);
+  font-size: 2.5rem;
+  font-weight: 700;
+  transition: all ease-out 0.1s;
+}
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/******************************************
+/* Media Queries
+/*******************************************/
+
