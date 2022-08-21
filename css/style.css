@@ -86,7 +86,7 @@ html {
   align-items: flex-start;
 }
 .btn {
-  flex: 1 0 20%;
+  flex: 1 0 20%; /* flex-basis : max space an item can occupy */
 
   height: 60px;
   /* width: calc(100% / 4); */
@@ -96,7 +96,7 @@ html {
   border-radius: calc(60px / 2);
   font-size: 2.5rem;
   font-weight: 700;
-  transition: all ease-out 0.1s;
+  transition: all 0.1s;
 }
 .btn-danger {
   background-color: red;
